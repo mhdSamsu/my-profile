@@ -1,9 +1,12 @@
 import React from "react";
 
+import './App.scss'
+import Intro from "./components/intro/Intro";
+
 const App =() => {
   return (
     <div className="App">
-      <h1>Construction on process...</h1>
+      <Intro />
     </div>
   );
 }

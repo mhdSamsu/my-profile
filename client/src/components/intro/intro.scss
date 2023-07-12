@@ -1,0 +1,44 @@
+@import '../theme/theme.scss';
+@import '../theme/variable.scss';
+
+.intro{
+   @include border();
+    border-radius: 10px;
+
+    padding: 2em;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-evenly;
+
+
+    &__img-container{
+        width: 30%;
+
+        display: flex;
+        justify-content: center;
+        &__my-pic{
+            @include border();
+            width: 225px;
+            height: 225px;
+            border-radius: 100%;
+            background-color: $bgColor;
+            object-fit:scale-down;
+        }
+    }
+
+    &__content{
+        width: 70%;
+        text-align: center;
+        font-family: $quoteFont;
+
+        &__quote{
+            font-size: 2.5rem;
+            font-weight: 100;
+        }
+
+        &__whatI{
+            font-size: 2rem;
+        }
+    }
+}

@@ -3,7 +3,13 @@
 
 $primaryColor:white;
 $secondaryColor:black;
-$bgColor:#F8F6F4;
+$secondaryColorTwo:rgba($color: $secondaryColor, $alpha: 0.5);
+$primaryColorTwo:#EFEAD8;
+$bgColor: rgba($color: #EFEAD8, $alpha: 0.2);
 
 $quoteFont: 'Satisfy', cursive;
-$primaryFont:
+$primaryFont:'PT Sans', sans-serif;
+
+$smallFontSize:1.2rem;
+$mediumFontSize:1.5rem;
+$largeFontSize:2rem;

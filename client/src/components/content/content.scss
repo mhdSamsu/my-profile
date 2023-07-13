@@ -1,0 +1,31 @@
+@import '../theme/theme.scss';
+@import '../theme/variable.scss';
+
+.content{
+    @include border();
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px;
+    
+    &__tabs{
+        display: flex;
+        justify-content: space-between;
+        .tab{
+            min-width: 50px;
+            border-bottom:2px solid $secondaryColorTwo;
+            margin: 2px;
+            padding: 2px 5px;
+
+            text-align: center;
+        }
+
+        .tab.active{
+            font-weight: bold;
+            border-bottom:2px solid $secondaryColor;
+        }
+        
+    }
+}

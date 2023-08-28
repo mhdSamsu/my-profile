@@ -4,28 +4,34 @@
 .content{
     @include border();
     border-radius: 10px;
-
     display: flex;
-    align-items: center;
-    flex-flow: column;
-    padding: 10px;
+    min-height: 600px;  
+   
+    &__howI{
+        width: 70%;
+        padding: 1em;
+        &__tabs{
+            display: flex;
+            justify-content: center;
+            .tab{
+                min-width: 50px;
+                border-bottom:2px solid $secondaryColorTwo;
+                margin: 2px;
+                padding: 2px 5px;
     
-    &__tabs{
-        display: flex;
-        justify-content: space-between;
-        .tab{
-            min-width: 50px;
-            border-bottom:2px solid $secondaryColorTwo;
-            margin: 2px;
-            padding: 2px 5px;
-
-            text-align: center;
+                text-align: center;
+            }
+    
+            .tab.active{
+                font-weight: bold;
+                border-bottom:2px solid $secondaryColor;
+            }
+            
         }
+    }
 
-        .tab.active{
-            font-weight: bold;
-            border-bottom:2px solid $secondaryColor;
-        }
-        
+    &__contact{
+        width: 30%;
+        border-left:1px solid $secondaryColorTwo;
     }
 }

@@ -1,0 +1,27 @@
+@import '../../theme/variable.scss';
+@import '../../theme/theme.scss';
+
+.projects{
+    width: 100%;
+    max-width: 700px;
+    padding: 20px 0;
+}
+
+.project{
+   &__heading{
+    &__name{
+        color: $secondaryColor;
+    }
+    &__designation{
+        color: $secondaryColorTwo;
+        margin: 10px;
+    }
+   }
+   &__content{
+    &__detail{
+        margin: 10px;
+        list-style:square;
+        font-style: italic;
+    }
+}
+}

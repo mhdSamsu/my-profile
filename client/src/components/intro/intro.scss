@@ -7,7 +7,7 @@
 
     padding: 2em;
     margin: 0 auto;
-    max-height: 250px;
+    max-height: 200px;
     background-color: $primaryColorTwo;
     display: flex;
     justify-content: space-around;
@@ -19,11 +19,11 @@
         justify-content: center;
         &__my-pic{
             @include border();
-            width: 225px;
-            height: 225px;
+            width: 200px;
+            height: 200px;
             border-radius: 100%;
             object-fit:scale-down;
-            background-color: #EEE3CB;
+            background-color: #C7BCA1;
         }
     }
 

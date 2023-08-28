@@ -2,36 +2,29 @@
 @import '../theme/variable.scss';
 
 .content{
-    @include border();
-    border-radius: 10px;
-    display: flex;
-    min-height: 600px;  
-   
-    &__howI{
-        width: 70%;
-        padding: 1em;
-        &__tabs{
-            display: flex;
-            justify-content: center;
-            .tab{
-                min-width: 50px;
-                border-bottom:2px solid $secondaryColorTwo;
-                margin: 2px;
-                padding: 2px 5px;
-    
-                text-align: center;
-            }
-    
-            .tab.active{
-                font-weight: bold;
-                border-bottom:2px solid $secondaryColor;
-            }
-            
-        }
+     display: flex;
+     justify-content: space-between;
+     flex-flow: row wrap-reverse;
+     
+    &__skill{
+        @include border();
+        width: 35%;
+        min-width: 300px;
+        
     }
 
-    &__contact{
-        width: 30%;
-        border-left:1px solid $secondaryColorTwo;
+    &__project{
+        @include border();
+        width: 65%;
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .content{
+        &__skill, &__project{
+            padding: 1.5em 4em;
+            width: 100%;
+        } 
     }
 }

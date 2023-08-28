@@ -2,15 +2,23 @@
 @import '../../theme/theme.scss';
 
 .projects{
-    width: 100%;
-    max-width: 700px;
-    padding: 20px 0;
+    &__title{
+        text-align: center;
+    }
 }
 
 .project{
    &__heading{
-    &__name{
-        color: $secondaryColor;
+    max-width: 300px;
+    &__projectName{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        &__link{
+            color: $secondaryColor;
+            padding: 10px;
+            text-decoration: none;
+        }
     }
     &__designation{
         color: $secondaryColorTwo;
@@ -20,8 +28,14 @@
    &__content{
     &__detail{
         margin: 10px;
-        list-style:square;
+        list-style:none ;
         font-style: italic;
     }
 }
+}
+
+@media only screen and (min-width: 1050px){
+    .projects{
+        padding: 1.5em 4em;
+    }
 }

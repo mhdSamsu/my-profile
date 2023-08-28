@@ -13,18 +13,12 @@ const Content = () => {
 
   return (
     <section className='content'>
-        <div className="content__howI">
-          <div className="content__howI__tabs">
-              <p className={classNames('tab', activeTab === 'Skill' && 'active')} onClick={()=>changeTab('Skill')}>Skill</p>
-              <p className={classNames('tab', activeTab === 'Project' && 'active')} onClick={()=>changeTab('Project')}>Project</p>
-          </div>
-
-          {activeTab === 'Skill' && <Skill/>}
-          {activeTab === 'Project' && <Project/>}
-        </div>
-        <div className="content__contact">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium consequuntur nobis, neque inventore accusantium esse commodi dicta aut cumque hic nam accusamus quis beatae consequatur facilis culpa ducimus provident!
-        </div>
+       <div className="content__project">
+        <Project />
+       </div>
+       <div className="content__skill">
+        <Skill />
+       </div>
     </section>
   )
 }

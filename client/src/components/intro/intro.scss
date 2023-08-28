@@ -1,26 +1,29 @@
 @import '../theme/theme.scss';
 @import '../theme/variable.scss';
 
-.intro{
-   @include border();
-    border-radius: 0px 0px 10px 10px;
 
-    padding: 2em;
+.intro{
+    @include border();
+
+    padding: 1.5em 4em;
     margin: 0 auto;
-    max-height: 200px;
-    background-color: $primaryColorTwo;
+    min-height: 250px;
+    min-width: 300px;
     display: flex;
     justify-content: space-around;
+    flex-flow: row wrap;
 
 
     &__img-container{
-        width: 30%;
+        width: 20%;
+        min-width: 250px;
         display: flex;
         justify-content: center;
+        align-items: center;
         &__my-pic{
             @include border();
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
             border-radius: 100%;
             object-fit:scale-down;
             background-color: #C7BCA1;
@@ -29,12 +32,14 @@
 
     &__content{
         width: 70%;
+        min-width: 300px;
+        max-width: 950px;
         text-align: center;
 
         &__me{
             &__name{
                 font-size: 2.5rem;
-                margin: 10px 10px 5px;
+                margin: 10px 10px;
             }
             &__whatI{
                 font-size: $mediumFontSize;
@@ -53,6 +58,33 @@
 
             &__content{
                 margin: 5px 10px 10px;
+            }
+
+            &__findMe{
+                &__title{
+                    font-style: italic;
+                }
+                &__links{
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+
+                    &__link{
+                        margin: 0px 5px;
+                    }
+                  
+                }
+                &__location{
+                    display: flex;
+                    justify-content: center;
+                    &__img{
+                        margin: 12.5px 0px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
             }
         }
     }

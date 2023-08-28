@@ -2,32 +2,18 @@
 @import '../../theme/theme.scss';
 
 .skills{
-    width: 100%;
-    max-width: 700px;
-    padding: 20px 0;
-    &__tabs{
-        max-width: 300px;
-        display: flex;
-        justify-content: flex-start;
-        border-bottom:2px solid $secondaryColorTwo;
-        text-transform: capitalize;
-        .tab{
-            min-width: 75px;
-            padding: 2px 10px;
-
-            text-align: center;
-        }
-        .tab.active{
-            font-weight: bold;
-        }
+    &__title{
+        text-align: center;
     }
 
     &__content{
-        &__skill{
-            margin: 10px;
-            list-style:square;
-            font-style: italic;
-        }
+        display: flex;
+        flex-flow: row wrap;
     }
+}
 
+@media only screen and (min-width: 1050px){
+    .skills{
+        padding: 1.5em 4em;
+    }
 }

@@ -7,12 +7,14 @@
     }
 
     &__content{
+        list-style: none;
+        padding: 0px;
         display: flex;
         flex-flow: row wrap;
     }
 }
 
-@media only screen and (min-width: 1050px){
+@media only screen and (min-width: 1000px){
     .skills{
         padding: 1.5em 4em;
     }

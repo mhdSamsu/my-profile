@@ -5,3 +5,31 @@
     width: 50px;
     height: 50px;
 }
+
+.skillRate{
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__name{
+        width: 50%;
+        font-size: 1.2rem;
+        float: left;
+        text-align: left;
+    }
+    &__star{
+        text-align: right;
+        width: 50%;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .skillRate{
+        &__name{
+           margin: auto 40px;
+        } 
+    }
+}

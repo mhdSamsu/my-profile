@@ -8,19 +8,20 @@
      
     &__skill{
         @include border();
-        width: 35%;
+        width: 30%;
         min-width: 300px;
         
     }
 
     &__project{
+        flex-shrink: 4;
         @include border();
-        width: 65%;
+        width: 70%;
         min-width: 300px;
     }
 }
 
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 1000px){
     .content{
         &__skill, &__project{
             padding: 1.5em 4em;

@@ -2,40 +2,37 @@ import React, { useState } from 'react'
 import classNames from 'classnames';
 
 import './skill.scss'
+import { SkillRate } from '../../sub-component/SubComponent';
 
 const Skill = () => {
   const[activeTab, setActiveTab] = useState('backend');
   const skills = [
     {
-      name:'Javascript',
-      star:'4 star ***********************************'
+      name:'JavaScript',
+      star:2.5
     },
     {
-      name:'Javascript',
-      star:'4 star ***********************************'
+      name:'NodeJs',
+      star:2
     },
     {
-      name:'Javascript',
-      star:'4 star ***********************************'
+      name:'React',
+      star:2
     },
     {
-      name:'Javascript',
-      star:'4 star ***********************************'
+      name:'MongoDB',
+      star:3
     },
     {
-      name:'Javascript',
-      star:'4 star ***********************************'
+      name:'SASS/SCSS',
+      star:2
     },
     {
-      name:'Javascript',
-      star:'4 star ***********************************'
+      name:'DigitalOcean',
+      star:3
     },
-    {
-      name:'Javascript',
-      star:'4 star ***********************************'
-    }
   ]
-    const changeTab = (tab) => setActiveTab(tab)
+  
   return (
     <section className='skills'>
        <h3 className='skills__title'>Skills</h3>
@@ -44,8 +41,7 @@ const Skill = () => {
           {
           skills.map(({name,star},idx) =>
             <li className='skills__content__skill' key={idx}>
-              <span title={name}>{name}</span>
-              <span title={star}>{star}</span>
+              <SkillRate name={name} star={star} />
             </li>
           )
           }
